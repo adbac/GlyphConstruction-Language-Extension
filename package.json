@@ -1,0 +1,25 @@
+{
+  "name": "glyphconstruction-language",
+  "displayName": "GlyphConstruction Language",
+  "description": "Support for the GlyphConstruction Language in VSCode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "glyphconstruction",
+      "aliases": ["GlyphConstruction", "glyphconstruction"],
+      "extensions": [".glyphConstruction"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "glyphconstruction",
+      "scopeName": "source.glyphconstruction",
+      "path": "./syntaxes/glyphconstruction.tmLanguage.json"
+    }]
+  }
+}

@@ -1,0 +1,77 @@
+{
+    "Glyph Mark Color": {
+        "prefix": ["!","mark-color"],
+        "body": ["! ${1:0}, ${2:0}, ${3:0}, ${4:1}"],
+        "description": "The color mark of the glyph."
+    },
+    "Transformation Matrix": {
+        "prefix": ["matrix"],
+        "body": ["${1:1}, ${2:0}, ${3:0}, ${4:1}, ${5:0}, ${6:0}"],
+        "description": "The transformation matrix of the component."
+    },
+    "Center Positioning Reference": {
+        "prefix": ["center"],
+        "body": ["center"],
+        "description": "Positioning reference: center."
+    },
+    "Top Positioning Reference": {
+        "prefix": ["top"],
+        "body": ["top"],
+        "description": "Positioning reference: top."
+    },
+    "Bottom Positioning Reference": {
+        "prefix": ["bottom"],
+        "body": ["bottom"],
+        "description": "Positioning reference: bottom."
+    },
+    "Left Positioning Reference": {
+        "prefix": ["left"],
+        "body": ["left"],
+        "description": "Positioning reference: left."
+    },
+    "Right Positioning Reference": {
+        "prefix": ["right"],
+        "body": ["right"],
+        "description": "Positioning reference: right."
+    },
+    "InnerLeft Positioning Reference": {
+        "prefix": ["innerLeft"],
+        "body": ["innerLeft"],
+        "description": "Positioning reference: innerLeft."
+    },
+    "InnerRight Positioning Reference": {
+        "prefix": ["innerRight"],
+        "body": ["innerRight"],
+        "description": "Positioning reference: innerRight."
+    },
+    "Origin Positioning Reference": {
+        "prefix": ["origin"],
+        "body": ["origin"],
+        "description": "Positioning reference: origin."
+    },
+    "Width Positioning Reference": {
+        "prefix": ["width"],
+        "body": ["width"],
+        "description": "Positioning reference: width."
+    },
+    "Descender Font Attribute": {
+        "prefix": ["descender"],
+        "body": ["descender"],
+        "description": "Font dimension attribute: descender."
+    },
+    "Ascender Font Attribute": {
+        "prefix": ["ascender"],
+        "body": ["ascender"],
+        "description": "Font dimension attribute: ascender."
+    },
+    "Cap-Height Font Attribute": {
+        "prefix": ["capHeight"],
+        "body": ["capHeight"],
+        "description": "Font dimension attribute: capHeight."
+    },
+    "x-Height Font Attribute": {
+        "prefix": ["xHeight"],
+        "body": ["xHeight"],
+        "description": "Font dimension attribute: xHeight."
+    }
+}

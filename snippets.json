@@ -1,5 +1,6 @@
 {
     "Glyph Mark Color": {
+        "scope": "glyphconstruction",
         "prefix": ["!","mark-color"],
         "body": ["! ${1:0}, ${2:0}, ${3:0}, ${4:1}"],
         "description": "The color mark of the glyph."

@@ -33,7 +33,7 @@
 		],
 		"snippets": [
 			{
-				"language": "javascript",
+				"language": "glyphconstruction",
 				"path": "./snippets.json"
 			}
 		]

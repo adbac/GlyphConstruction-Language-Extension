@@ -12,66 +12,36 @@
 			"include": "#comments"
 		},
 		{
-			"include": "#variables"
-		},
-		{
-			"include": "#global"
-		},
-		{
-			"include": "#constants"
+			"include": "#entities"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.glyphconstruction",
-				"match": "([&]|[+]|[|]|>|[?])"
+				"match": "[?*>=+&|!]"
 			}]
 		},
-		"global": {
-			"patterns": [{
-				"match": "([a-zA-Z_.][a-zA-Z0-9_.]*)\\s?(@)\\s?([a-zA-Z_.][a-zA-Z0-9_.]*:)?([a-zA-Z_.][a-zA-Z0-9_.]*),\\s?([a-zA-Z_.][a-zA-Z0-9_.]*)",
-				"captures": {
-					"2":{"name":"keyword.control.glyphconstruction"},
-					"4":{"name":"entity.name.type.glyphconstruction"},
-					"5":{"name":"entity.name.type.glyphconstruction"}
-				},
-				"patterns": [{
-					"match": ":",
-					"name":"keyword.control.glyphconstruction"
-				}]
-			},
-			{
-				"match": "([a-zA-Z_.][a-zA-Z0-9_.]*)\\s?(=)\\s?",
-				"captures": {
-					"1":{"name":"variable.other.glyphconstruction"},
-					"2":{"name":"keyword.control.glyphconstruction"}
-				}
-			}]
-		},
-		"comments": {
+		"comments":{
 			"patterns": [{
 				"name": "comment.line.number-sign.glyphconstruction",
-				"match": "#.*"
+				"match": "#.*$"
 			}]
 		},
-		"variables": {
-			"patterns": [{
-				"name": "variable.other.glyphconstruction",
-				"match": "{.+}"
-			},
-			{
-				"name": "variable.other.glyphconstruction",
-				"match": "[$][a-zA-Z0-9_-]+"
-			}]
-		},
-		"constants": {
-			"patterns": [{
-				"match": "[|]\\s?([a-fA-F0-9]{4,})",
-				"captures": {
-					"1":{"name":"constant.numeric.glyphconstruction"}
+		"strings": {
+			"name": "string.quoted.double.glyphconstruction",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.glyphconstruction",
+					"match": "\\\\."
 				}
-			}]
+			]
+		},
+		"entities":{
+			"name":"variable.other.glyphconstruction",
+			"match": "/[a-zA-Z_.][a-zA-Z0-9_.]*/\\s?="
 		}
 	},
 	"scopeName": "source.glyphconstruction"

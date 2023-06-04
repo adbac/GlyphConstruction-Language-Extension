@@ -3,23 +3,38 @@
 	"name": "GlyphConstruction",
 	"patterns": [
 		{
+			"include": "#construction-declaration"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
-			"include": "#strings"
+			"include": "#variables"
 		},
 		{
 			"include": "#comments"
 		},
 		{
 			"include": "#entities"
+		},
+		{
+			"include": "#constants"
 		}
 	],
 	"repository": {
+		"construction-declaration":{
+			"patterns": [{
+				"match": "([a-zA-Z_.][a-zA-Z0-9_.]*)\\s*(=)",
+				"captures": {
+					"1":{"name":"entity.name.function.glyphconstruction"},
+					"2":{"name":"keyword.control.glyphconstruction"}
+				}
+			}]
+		},
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.glyphconstruction",
-				"match": "[?*>=+&|!]"
+				"match": "[?*>=+&\\\\|!,~:@]"
 			}]
 		},
 		"comments":{
@@ -28,20 +43,31 @@
 				"match": "#.*$"
 			}]
 		},
-		"strings": {
-			"name": "string.quoted.double.glyphconstruction",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.glyphconstruction",
-					"match": "\\\\."
-				}
-			]
-		},
 		"entities":{
-			"name":"variable.other.glyphconstruction",
-			"match": "/[a-zA-Z_.][a-zA-Z0-9_.]*/\\s?="
+			"patterns": [{
+				"name":"entity.name.type.glyphconstruction",
+				"match": "descender|ascender|capHeight|xHeight|top|bottom|left|right|innerLeft|innerRight|center|origin|width"
+			}]
+		},
+		"variables":{
+			"patterns": [{
+				"name": "variable.other.glyphconstruction",
+				"match": "{.+}"
+			},
+			{
+				"name": "variable.other.glyphconstruction",
+				"match": "[$][a-zA-Z0-9_-]+"
+			}]
+		},
+		"constants":{
+			"patterns": [{
+				"name": "constant.language.glyphconstruction",
+				"match": "\\b[a-fA-F0-9]{4,}\\b"
+			},
+			{
+				"name": "constant.numeric.glyphconstruction",
+				"match": "((\\d+\\.\\d*|\\d*\\.\\d+)([eE][+-]?[0-9]+)?j?\\%?)|(\\d+[eE][+-]?[0-9]+j?\\%?)|(\\d+j?\\%?)"
+			}]
 		}
 	},
 	"scopeName": "source.glyphconstruction"

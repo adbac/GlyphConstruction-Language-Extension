@@ -23,8 +23,8 @@
 				],
 				"configuration": "./language-configuration.json",
 				"icon": {
-					"light": "./icons/gc-icon-light.svg",
-					"dark": "./icons/gc-icon-dark.svg"
+					"light": "./icons/gc-light.svg",
+					"dark": "./icons/gc-dark.svg"
 				}
 			}
 		],

@@ -73,5 +73,30 @@
         "prefix": ["xHeight"],
         "body": ["xHeight"],
         "description": "Font dimension attribute: xHeight."
+    },
+    "Overwrite Existing Glyphs": {
+        "prefix": ["overwrite"],
+        "body": ["# OverwriteExistingGlyphs: ${1:True}"],
+        "description": "Comment variable: OverwriteExistingGlyphs"
+    },
+    "Auto Unicodes": {
+        "prefix": ["auto"],
+        "body": ["# AutoUnicodes: ${1:True}"],
+        "description": "Comment variable: AutoUnicodes"
+    },
+    "Mark Glyphs": {
+        "prefix": ["mark"],
+        "body": ["# MarkGlyphs: ${1:0}, ${2:0}, ${3:0}, ${4:1}"],
+        "description": "Comment variable: MarkGlyphs"
+    },
+    "Auto Hint": {
+        "prefix": ["hint","auto"],
+        "body": ["# AutoHint: ${1:False}"],
+        "description": "Comment variable: AutoHint (FontForge-implemented)"
+    },
+    "Unlink Remove Overlap Flag": {
+        "prefix": ["unlink"],
+        "body": ["# UnlinkRmOvrlpFlag: ${1:False}"],
+        "description": "Comment variable: UnlinkRmOvrlpFlag (FontForge-implemented)"
     }
 }

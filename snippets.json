@@ -92,11 +92,11 @@
     "Auto Hint": {
         "prefix": ["hint","auto"],
         "body": ["# AutoHint: ${1:False}"],
-        "description": "Comment variable: AutoHint (FontForge-implemented)"
+        "description": "Comment variable: AutoHint (FontForge only)"
     },
     "Unlink Remove Overlap Flag": {
         "prefix": ["unlink"],
         "body": ["# UnlinkRmOvrlpFlag: ${1:False}"],
-        "description": "Comment variable: UnlinkRmOvrlpFlag (FontForge-implemented)"
+        "description": "Comment variable: UnlinkRmOvrlpFlag (FontForge only)"
     }
 }

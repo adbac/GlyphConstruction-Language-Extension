@@ -23,12 +23,12 @@
 					"glyphconstruction"
 				],
 				"extensions": [
-					".glyphConstruction"
+					".glyphConstruction", ".gc"
 				],
 				"configuration": "./language-configuration.json",
 				"icon": {
-					"light": "./icons/gc-light.svg",
-					"dark": "./icons/gc-dark.svg"
+					"light": "./icons/gc-light.png",
+					"dark": "./icons/gc-dark.png"
 				}
 			}
 		],

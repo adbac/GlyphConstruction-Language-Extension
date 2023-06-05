@@ -41,5 +41,6 @@
 				"path": "./snippets.json"
 			}
 		]
-	}
+	},
+	"icon": "./icons/gallery.png"
 }

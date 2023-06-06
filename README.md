@@ -4,7 +4,7 @@
 
 > _"Glyph Construction is a simple, powerful, human-readable language for describing how glyph shapes are built."_
 
-![Glyph Construction document screenshot](https://github.com/adbac/GlyphConstruction-Language-Extension/assets/126618591/dc3f1e08-6522-482e-94d2-9b241706177a)
+![screenshot-1](https://github.com/adbac/GlyphConstruction-Language-Extension/assets/126618591/6f86a68c-5cca-4b43-8f00-f44c11095fdb)
 
 ## Features
 

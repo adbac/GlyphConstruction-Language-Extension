@@ -24,6 +24,16 @@
         "body": ["bottom"],
         "description": "Positioning reference: bottom."
     },
+    "innerTop Positioning Reference": {
+        "prefix": ["innerTop"],
+        "body": ["innerTop"],
+        "description": "Positioning reference: innerTop."
+    },
+    "innerBottom Positioning Reference": {
+        "prefix": ["innerBottom"],
+        "body": ["innerBottom"],
+        "description": "Positioning reference: innerBottom."
+    },
     "Left Positioning Reference": {
         "prefix": ["left"],
         "body": ["left"],

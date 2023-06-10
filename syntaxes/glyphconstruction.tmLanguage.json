@@ -52,7 +52,7 @@
 		"variables":{
 			"patterns": [{
 				"name": "variable.language.glyphconstruction",
-				"match": "{.+}"
+				"match": "{.+?}"
 			},
 			{
 				"name": "variable.language.glyphconstruction",

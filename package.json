@@ -1,7 +1,7 @@
 {
 	"name": "glyphconstruction-language",
 	"displayName": "Glyph Construction",
-	"description": "Support for the Glyph Construction Language in VSCode",
+	"description": "Glyph Construction Language support for VS Code",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.77.0"

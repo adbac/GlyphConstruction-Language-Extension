@@ -46,7 +46,7 @@
 		"entities":{
 			"patterns": [{
 				"name":"entity.name.type.glyphconstruction",
-				"match": "descender|ascender|capHeight|xHeight|top|bottom|left|right|innerLeft|innerRight|center|origin|width"
+				"match": "\\b(descender|ascender|capHeight|xHeight|top|bottom|left|right|innerLeft|innerRight|center|origin|width)\\b"
 			}]
 		},
 		"variables":{

@@ -11,7 +11,7 @@
 - **Syntax-highlighting** for the `*.glyphConstruction` and `*.gc` files
 - **Snippets**
     - Font dimension attributes: `descender`, `xHeight`, `capHeight`, `ascender`
-    - Calculated reference positions: `top`, `bottom`, `left`, `right`, `innerLeft`, `innerRight`, `center`, `origin`, `width`
+    - Calculated reference positions: `top`, `bottom`, `innerTop`, `innerBottom`, `left`, `right`, `innerLeft`, `innerRight`, `center`, `origin`, `width`
     - Color mark syntax (prefix: _color-mark_ or _cm_): `! 0, 0, 0, 1`
     - Transformation matrix syntax (prefix: _matrix_): `1, 0, 0, 1, 0, 0`
     - Comment variables: `OverwriteExistingGlyphs`, `AutoUnicodes`, `MarkGlyphs`, `AutoHint`, `UnlinkRmOvrlpFlag` (the last 2 are for FontForge only)

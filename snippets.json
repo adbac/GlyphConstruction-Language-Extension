@@ -108,5 +108,10 @@
         "prefix": ["unlink"],
         "body": ["# UnlinkRmOvrlpFlag: ${1:False}"],
         "description": "Comment variable: UnlinkRmOvrlpFlag (FontForge only)"
+    },
+    "Side Bearings Mode": {
+        "prefix": ["side","bearings"],
+        "body": ["# SideBearingsMode: ${1:False}"],
+        "description": "Comment variable: SideBearingsMode (FontForge only)"
     }
 }

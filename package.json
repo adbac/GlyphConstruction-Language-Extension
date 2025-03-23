@@ -3,7 +3,7 @@
     "displayName": "Glyph Construction Syntax",
     "description": "Syntax highlighting for Glyph Construction files",
     "version": "0.1.0",
-    "publisher": "Adrien Bachelart",
+    "publisher": "adbac",
     "engines": {
         "vscode": "^1.77.0"
     },

@@ -1,74 +1,120 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"scopeName": "source.glyphconstruction",
 	"name": "GlyphConstruction",
+	"fileTypes": [
+		"glyphConstruction", "glyphconstruction", "gc"
+	],
 	"patterns": [
 		{
-			"include": "#construction-declaration"
+			"include": "#comments"
 		},
 		{
 			"include": "#keywords"
 		},
 		{
-			"include": "#variables"
+			"include": "#numbers"
 		},
 		{
-			"include": "#comments"
+			"include": "#strings"
 		},
 		{
-			"include": "#entities"
+			"include": "#operators"
 		},
 		{
-			"include": "#constants"
+			"include": "#whitespace"
 		}
 	],
 	"repository": {
-		"construction-declaration":{
-			"patterns": [{
-				"match": "([a-zA-Z_.][a-zA-Z0-9_.]*)\\s*(=)",
-				"captures": {
-					"1":{"name":"support.variable.glyphconstruction"},
-					"2":{"name":"keyword.control.glyphconstruction"}
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.number-sign.glyphconstruction",
+					"match": "#.*$"
 				}
-			}]
+			]
 		},
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.glyphconstruction",
-				"match": "[?*>=+-/&|!,~:@^`'.\"\\\\]"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.other.glyphconstruction",
+					"match": "\\.([a-zA-Z_][a-zA-Z0-9_]*)?"
+				},
+				{
+					"name": "keyword.operator.glyphconstruction",
+					"match": "(\\|)[\\s|\\\\\\s]*([a-fA-F0-9]{4,})"
+				},
+				{
+					"name": "keyword.operator.glyphconstruction",
+					"match": "(=|\\+|&|@|,|:|\\.|\\^|#|!|~|\\|'|`|\"|-|\\/|\\*)"
+				},
+				{
+					"name": "variable.other.glyphconstruction",
+					"match": "(\\?)?([a-zA-Z_\\{][a-zA-Z0-9_.\\{\\}]*)((\\s|\\\\\\s)*=)"
+				},
+				{
+					"name": "keyword.other.glyphconstruction",
+					"match": "(descender|xHeight|capHeight|ascender|origin|width|height|left|innerLeft|right|innerRight|top|innerTop|bottom|innerBottom|center)"
+				}
+			]
 		},
-		"comments":{
-			"patterns": [{
-				"name": "comment.line.number-sign.glyphconstruction",
-				"match": "#.*$"
-			}]
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.float.glyphconstruction",
+					"match": "(\\d+\\.\\d*|\\d*\\.\\d+)([eE][+-]?[0-9]+)?j?\\%?"
+				},
+				{
+					"name": "constant.numeric.float.glyphconstruction",
+					"match": "\\d+[eE][+-]?[0-9]+j?\\%?"
+				},
+				{
+					"name": "constant.numeric.integer.glyphconstruction",
+					"match": "\\d+j?\\%?"
+				}
+			]
 		},
-		"entities":{
-			"patterns": [{
-				"name":"entity.name.type.glyphconstruction",
-				"match": "\\b(descender|ascender|capHeight|xHeight|top|bottom|innerTop|innerBottom|left|right|innerLeft|innerRight|center|origin|width)\\b"
-			}]
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.double.glyphconstruction",
+					"begin": "\"",
+					"end": "\"",
+					"patterns": [
+						{
+							"name": "constant.character.escape.glyphconstruction",
+							"match": "\\\\."
+						}
+					]
+				},
+				{
+					"name": "string.quoted.single.glyphconstruction",
+					"begin": "'",
+					"end": "'",
+					"patterns": [
+						{
+							"name": "constant.character.escape.glyphconstruction",
+							"match": "\\\\."
+						}
+					]
+				}
+			]
 		},
-		"variables":{
-			"patterns": [{
-				"name": "variable.language.glyphconstruction",
-				"match": "{.+?}"
-			},
-			{
-				"name": "variable.language.glyphconstruction",
-				"match": "[$][a-zA-Z0-9_-]+"
-			}]
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.glyphconstruction",
+					"match": "\\-|\\+|\\/|\\*"
+				}
+			]
 		},
-		"constants":{
-			"patterns": [{
-				"name": "constant.numeric.glyphconstruction",
-				"match": "\\b[a-fA-F0-9]{4,}\\b"
-			},
-			{
-				"name": "constant.numeric.glyphconstruction",
-				"match": "((\\d+\\.\\d*|\\d*\\.\\d+)([eE][+-]?[0-9]+)?j?\\%?)|(\\d+[eE][+-]?[0-9]+j?\\%?)|(\\d+j?\\%?)"
-			}]
+		"whitespace": {
+			"patterns": [
+				{
+					"name": "text.whitespace.glyphconstruction",
+					"match": "\\s+"
+				}
+			]
 		}
-	},
-	"scopeName": "source.glyphconstruction"
+	}
 }

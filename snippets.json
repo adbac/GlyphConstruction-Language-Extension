@@ -98,20 +98,5 @@
         "prefix": ["mark"],
         "body": ["# MarkGlyphs: ${1:0}, ${2:0}, ${3:0}, ${4:1}"],
         "description": "Comment variable: MarkGlyphs"
-    },
-    "Auto Hint": {
-        "prefix": ["hint","auto"],
-        "body": ["# AutoHint: ${1:False}"],
-        "description": "Comment variable: AutoHint (FontForge only)"
-    },
-    "Unlink Remove Overlap Flag": {
-        "prefix": ["unlink"],
-        "body": ["# UnlinkRmOvrlpFlag: ${1:False}"],
-        "description": "Comment variable: UnlinkRmOvrlpFlag (FontForge only)"
-    },
-    "Side Bearings Mode": {
-        "prefix": ["side","bearings"],
-        "body": ["# SideBearingsMode: ${1:False}"],
-        "description": "Comment variable: SideBearingsMode (FontForge only)"
     }
 }

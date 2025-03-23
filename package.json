@@ -1,50 +1,53 @@
 {
-	"name": "glyphconstruction-language",
-	"displayName": "Glyph Construction",
-	"description": "Glyph Construction Language support for VS Code",
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.77.0"
-	},
-	"categories": [
-		"Programming Languages",
-		"Snippets"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/adbac/GlyphConstruction-Language-Extension.git"
-	},
-	"contributes": {
-		"languages": [
-			{
-				"id": "glyphconstruction",
-				"aliases": [
-					"GlyphConstruction",
-					"glyphconstruction"
-				],
-				"extensions": [
-					".glyphConstruction", ".gc"
-				],
-				"configuration": "./language-configuration.json",
-				"icon": {
-					"light": "./icons/gc-light.png",
-					"dark": "./icons/gc-dark.png"
-				}
-			}
-		],
-		"grammars": [
-			{
-				"language": "glyphconstruction",
-				"scopeName": "source.glyphconstruction",
-				"path": "./syntaxes/glyphconstruction.tmLanguage.json"
-			}
-		],
-		"snippets": [
-			{
-				"language": "glyphconstruction",
-				"path": "./snippets.json"
-			}
-		]
-	},
-	"icon": "./images/gallery.png"
+    "name": "glyph-construction-syntax",
+    "displayName": "Glyph Construction Syntax",
+    "description": "Syntax highlighting for Glyph Construction files",
+    "version": "0.1.0",
+    "publisher": "Adrien Bachelart",
+    "engines": {
+        "vscode": "^1.77.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/adbac/GlyphConstruction-Language-Extension.git"
+    },
+    "contributes": {
+        "grammars": [
+            {
+                "language": "glyphconstruction",
+                "scopeName": "source.glyphconstruction",
+                "path": "./syntaxes/glyphconstruction.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "glyphconstruction",
+                "path": "./snippets.json"
+            }
+        ],
+        "languages": [
+            {
+                "id": "glyphconstruction",
+                "aliases": [
+                    "GlyphConstruction",
+                    "glyphconstruction"
+                ],
+                "extensions": [
+                    ".glyphConstruction",
+                    ".glyphconstruction",
+                    ".gc"
+                ],
+                "configuration": "./language-configuration.json",
+                "icon": {
+                    "light": "./icons/gc-light.png",
+                    "dark": "./icons/gc-dark.png"
+                }
+            }
+        ]
+    },
+    "icon": "./images/gallery.png"
 }

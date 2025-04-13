@@ -1,14 +1,14 @@
 # Glyph Construction for VSCode
 
-**This VS Code extension provides syntax-highlighting and snippets for the [Glyph Construction](https://github.com/typemytype/GlyphConstruction#readme) files, that can be used in RoboFont, FontLab and FontForge.**
+**This VS Code extension provides syntax-highlighting and snippets for [Glyph Construction](https://github.com/typemytype/GlyphConstruction#readme) files, used in RoboFont for example.**
 
 > _"Glyph Construction is a simple, powerful, human-readable language for describing how glyph shapes are built."_
 
-![screenshot-1](https://github.com/adbac/GlyphConstruction-Language-Extension/assets/126618591/6f86a68c-5cca-4b43-8f00-f44c11095fdb)
+![screenshot](https://raw.githubusercontent.com/adbac/GlyphConstruction-Language-Extension/refs/heads/main/images/screenshot.png)
 
 ## Features
 
-- **Syntax-highlighting** for the `*.glyphConstruction` and `*.gc` files
+- **Syntax-highlighting** for `*.glyphConstruction` and `*.gc` files
 - **Snippets**
     - Font dimension attributes: `descender`, `xHeight`, `capHeight`, `ascender`
     - Calculated reference positions: `top`, `bottom`, `innerTop`, `innerBottom`, `left`, `right`, `innerLeft`, `innerRight`, `center`, `origin`, `width`
